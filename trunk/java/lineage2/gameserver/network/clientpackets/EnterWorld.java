@@ -207,8 +207,11 @@ public class EnterWorld extends L2GameClientPacket
 		{
 			activeChar.sendPacket(new ExCastleState(castle));
 		}
-		activeChar.sendPacket(SystemMsg.WELCOME_TO_THE_WORLD_OF_LINEAGE_II);
-		Announcements.getInstance().showAnnouncements(activeChar);
+        activeChar.sendMessage("Server use L2GloryOfDay's files " +
+                "and developed by the L2GloryOfDay's Team, " +
+                "you can find our info about project on www.L2GloryOfDays.ro");
+        activeChar.sendMessage("L2GloryOfDay's Team: ***Alban***");
+        Announcements.getInstance().showAnnouncements(activeChar);
 		if (first)
 		{
 			activeChar.getListeners().onEnter();
