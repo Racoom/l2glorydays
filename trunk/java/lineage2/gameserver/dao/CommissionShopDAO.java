@@ -256,7 +256,6 @@ public class CommissionShopDAO
 	 * @param exItemType ExItemType
 	 * @return CommissionItemInfo
 	 */
-	@SuppressWarnings("resource")
 	public CommissionItemInfo getCommissionItemInfo(long auctionId, ExItemType exItemType)
 	{
 		CommissionItemInfo itemInfo = null;

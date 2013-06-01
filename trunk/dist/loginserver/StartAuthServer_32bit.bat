@@ -1,6 +1,5 @@
 @echo off
-title Glory Of Day's: Login Server Console
-color E
+title GoD: Login Server Console
 :start
 echo Starting LoginServer.
 echo.

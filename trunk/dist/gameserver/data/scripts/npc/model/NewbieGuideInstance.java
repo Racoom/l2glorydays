@@ -186,7 +186,6 @@ public class NewbieGuideInstance extends NpcInstance
 	 * @param player Player
 	 * @return String
 	 */
-	@SuppressWarnings("incomplete-switch")
 	public String getQuestNpc(int quest, Player player)
 	{
 		int val = 0;

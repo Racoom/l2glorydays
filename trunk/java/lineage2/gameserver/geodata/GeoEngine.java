@@ -1898,7 +1898,6 @@ public class GeoEngine
 	 * @param ry byte
 	 * @return boolean
 	 */
-	@SuppressWarnings("resource")
 	public static boolean LoadGeodataFile(byte rx, byte ry)
 	{
 		String fname = "geodata/" + rx + "_" + ry + ".l2j";

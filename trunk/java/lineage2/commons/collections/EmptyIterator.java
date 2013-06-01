@@ -23,7 +23,6 @@ public class EmptyIterator<E> implements Iterator<E>
 	/**
 	 * Field INSTANCE.
 	 */
-	@SuppressWarnings("rawtypes")
 	private static final Iterator INSTANCE = new EmptyIterator();
 	
 	/**

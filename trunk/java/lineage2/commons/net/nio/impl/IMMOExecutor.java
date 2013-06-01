@@ -16,7 +16,6 @@ package lineage2.commons.net.nio.impl;
  * @author Mobius
  * @version $Revision: 1.0 $
  */
-@SuppressWarnings("rawtypes")
 public interface IMMOExecutor<T extends MMOClient>
 {
 	/**
