@@ -553,7 +553,6 @@ public final class NpcTemplate extends CharTemplate
 	 * Method addSkill.
 	 * @param skill Skill
 	 */
-	@SuppressWarnings("incomplete-switch")
 	public void addSkill(Skill skill)
 	{
 		if (_skills.isEmpty())

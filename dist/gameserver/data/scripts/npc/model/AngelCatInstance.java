@@ -50,7 +50,6 @@ public final class AngelCatInstance extends NpcInstance
 			super.onBypassFeedback(player, command);
 	}
 	
-	@SuppressWarnings("resource")
 	private boolean loadInfo(Player player)
 	{
 		String value = null;

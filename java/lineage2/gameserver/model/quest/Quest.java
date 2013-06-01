@@ -335,7 +335,6 @@ public class Quest
 	 * Method restoreQuestStates.
 	 * @param player Player
 	 */
-	@SuppressWarnings("resource")
 	public static void restoreQuestStates(Player player)
 	{
 		Connection con = null;
@@ -367,12 +366,11 @@ public class Quest
 					if (!Config.DONTLOADQUEST)
 					{
 						_log.warn("Unknown quest " + questId + " for player " + player.getName());
-						if (!Config.REMOVE_UNKNOWN_QUEST)
+						if (Config.REMOVE_UNKNOWN_QUEST)
 						{
-							statement = con.prepareStatement("DELETE FROM character_quests WHERE char_id=? and name=?");
-							statement.setInt(1, player.getObjectId());
-							statement.setString(2, questId);
-							rset = statement.executeQuery();
+							invalidQuestData.setInt(1, player.getObjectId());
+							invalidQuestData.setString(2, questId);
+							invalidQuestData.executeUpdate();
 						}
 					}
 					continue;

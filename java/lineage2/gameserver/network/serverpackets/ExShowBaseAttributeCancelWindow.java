@@ -37,7 +37,6 @@ public class ExShowBaseAttributeCancelWindow extends L2GameServerPacket
 		}
 	}
 
-	@SuppressWarnings("incomplete-switch")
 	public static long getAttributeRemovePrice(ItemInstance item)
 	{
 		switch (item.getCrystalType())
@@ -46,7 +45,7 @@ public class ExShowBaseAttributeCancelWindow extends L2GameServerPacket
 				return item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON ? 50000 : 40000;
 			case S80:
 				return item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON ? 100000 : 80000;
-				// S84 ÐŸÐ¾ Ð¸Ð´ÐµÐ¸ Ñ‚ÐµÐ¿ÐµÑ€ÑŒ Ð²ÐµÑ�ÑŒ ÐºÐ°Ðº s80... Ð˜Ð½Ñ„Ð° Ð½Ðµ Ñ‚Ð¾Ñ‡Ð½Ð°...
+				// S84 По идеи теперь весь как s80... Инфа не точна...
 			case S84:
 				return item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON ? 200000 : 160000;
 			case R:

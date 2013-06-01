@@ -199,7 +199,6 @@ public class _503_PursuitClanAmbition extends Quest implements ScriptFile
 		return clan.getLeader().getPlayer();
 	}
 	
-	@SuppressWarnings("resource")
 	public int getLeaderVar(QuestState st, String var)
 	{
 		final boolean cond = "cond".equalsIgnoreCase(var);

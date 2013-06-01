@@ -18,7 +18,6 @@ import java.nio.ByteBuffer;
  * @author Mobius
  * @version $Revision: 1.0 $
  */
-@SuppressWarnings("rawtypes")
 public interface IPacketHandler<T extends MMOClient>
 {
 	/**

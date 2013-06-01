@@ -1,6 +1,5 @@
 @echo off
-title Glory Of Day's: Game Server Console
-color E
+title GoD: Game Server Console
 :start
 echo Starting GameServer.
 echo.

@@ -103,7 +103,6 @@ public class GeoOptimizer
 		 * Method saveToFile.
 		 * @param links BlockLink[]
 		 */
-		@SuppressWarnings("resource")
 		private void saveToFile(BlockLink[] links)
 		{
 			log.info("Saving matches to: " + fileName);
@@ -275,7 +274,6 @@ public class GeoOptimizer
 			}
 			try
 			{
-				@SuppressWarnings("resource")
 				FileChannel roChannel = new RandomAccessFile(GeoCrc, "r").getChannel();
 				if (roChannel.size() != (GeoEngine.BLOCKS_IN_MAP * 4))
 				{
@@ -303,7 +301,6 @@ public class GeoOptimizer
 		/**
 		 * Method saveToFile.
 		 */
-		@SuppressWarnings("resource")
 		private void saveToFile()
 		{
 			log.info("Saving checksums to: " + fileName);
@@ -427,7 +424,6 @@ public class GeoOptimizer
 		}
 		try
 		{
-			@SuppressWarnings("resource")
 			FileChannel roChannel = new RandomAccessFile(f, "r").getChannel();
 			int count = (int) ((roChannel.size() - 1) / 6);
 			ByteBuffer buffer = roChannel.map(FileChannel.MapMode.READ_ONLY, 0, roChannel.size());

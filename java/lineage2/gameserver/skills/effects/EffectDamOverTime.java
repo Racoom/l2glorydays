@@ -81,7 +81,6 @@ public class EffectDamOverTime extends Effect
 	 * Method onActionTime.
 	 * @return boolean
 	 */
-	@SuppressWarnings("incomplete-switch")
 	@Override
 	public boolean onActionTime()
 	{
